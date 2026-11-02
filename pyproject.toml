@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "joeyselfy-infersre_jd456"
+name = "joeyselfy-pii_masking_restore_ratio_calc"
 version = "0.1.0"
 description = "从输入中抽取数值，计算推理服务 SRE 工程师·敏感信息的脱敏与回填相关的比值与占比，分母为零时明确报错"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://joeyselfy.github.io"
-Repository = "https://github.com/joeyselfy/infersre_jd456"
-Issues = "https://github.com/joeyselfy/infersre_jd456/issues"
+Repository = "https://github.com/joeyselfy/pii_masking_restore_ratio_calc"
+Issues = "https://github.com/joeyselfy/pii_masking_restore_ratio_calc/issues"
 
 [project.scripts]
-infersre_jd456 = "infersre_jd456:main"
+pii_masking_restore_ratio_calc = "pii_masking_restore_ratio_calc:main"
 
 [tool.setuptools]
-py-modules = ["infersre_jd456"]
+py-modules = ["pii_masking_restore_ratio_calc"]

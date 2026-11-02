@@ -1,11 +1,11 @@
-# infersre_jd456
+# pii_masking_restore_ratio_calc
 
 **算出推理服务 SRE 工程师·敏感信息的脱敏与回填里各项的占比与比值。**
 
-`infersre_jd456` —— 从输入中抽取数值，计算推理服务 SRE 工程师·敏感信息的脱敏与回填相关的比值与占比，分母为零时明确报错
+`pii_masking_restore_ratio_calc` —— 从输入中抽取数值，计算推理服务 SRE 工程师·敏感信息的脱敏与回填相关的比值与占比，分母为零时明确报错
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`infersre_jd456.py` 拷走就能用
+- 单文件，`pii_masking_restore_ratio_calc.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install joeyselfy-infersre_jd456
+pip install joeyselfy-pii_masking_restore_ratio_calc
 ```
 
 装完直接用命令名调用：
 
 ```bash
-infersre_jd456 --help
+pii_masking_restore_ratio_calc --help
 ```
 
-也可以不用安装，直接把 `infersre_jd456.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `pii_masking_restore_ratio_calc.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ infersre_jd456 --help
 ## 用法
 
 ```bash
-python infersre_jd456.py --file input.txt
-python infersre_jd456.py --text "示例内容"
-python infersre_jd456.py --file input.txt --json
+python pii_masking_restore_ratio_calc.py --file input.txt
+python pii_masking_restore_ratio_calc.py --text "示例内容"
+python pii_masking_restore_ratio_calc.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python infersre_jd456.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_infersre_jd456.py
+python test_pii_masking_restore_ratio_calc.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_infersre_jd456.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/joeyselfy/infersre_jd456>
+- GitHub 仓库：<https://github.com/joeyselfy/pii_masking_restore_ratio_calc>
 
 ---
 
@@ -79,7 +79,7 @@ python test_infersre_jd456.py
 joeyselfy 做推理服务 SRE 工程师·敏感信息的脱敏与回填相关的问题，方向对标OpenAI的初级推理服务 SRE 工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://joeyselfy.github.io>
-- 仓库：<https://github.com/joeyselfy/infersre_jd456>
+- 仓库：<https://github.com/joeyselfy/pii_masking_restore_ratio_calc>
 
 ## 许可
 
